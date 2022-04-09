@@ -1,0 +1,10 @@
+# version control
+.gitignore
+.github/
+
+# other
+.vscode/
+*.code-workspace
+**/tests/
+**/*.map
+CONTRIBUTING.md

@@ -2,13 +2,13 @@
   "name": "vscode-bait",
   "displayName": "bait",
   "description": "Provides rich language support for the bait programming language.",
-  "version": "0.1.0-dev",
+  "version": "0.0.1",
   "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/tiabeast/vscode-bait"
   },
-  "publisher": "serkonda7",
+  "publisher": "tiabeast",
   "engines": {
     "vscode": "^1.56.0"
   },

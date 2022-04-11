@@ -19,14 +19,14 @@ repository:
   functions:
     patterns:
       - name: meta.function.definition
-        begin: ^(fun)\s*(?:\((\w+)\s*(\w+)\))?
+        begin: ^(fun)\s*(?:\((\w+)\W+([a-zA-Z0-9.]+)\))?
         beginCaptures:
           1:
             name: keyword.fun
           2:
             name: variable.parameter
           3:
-            name: support.type
+            name: support.type.receiver
         end: (\w+)\s*\(
         endCaptures:
           1:
@@ -62,7 +62,7 @@ repository:
         end: "`"
 
   types:
-    name: support.type
+    name: support.type.builtin
     match: \b(bool|byte|i(8|16|32|64)|string|void)\b
 
   variables:

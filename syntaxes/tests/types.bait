@@ -1,21 +1,46 @@
 // SYNTAX TEST "source.bait" "types"
 
-fun nums(a i8, b i16, c i32, d i64) {
-//         ^^ support.type
-//               ^^^ support.type
-//                      ^^^ support.type
-//                             ^^^ support.type
+// BUILTIN TYPES
 
-    x := i32(a)
-//       ^^^ support.type
-    y := &void(0)
-//        ^^^^ support.type
+struct BuiltinTypes {
+    a i8
+//    ^^ support.type.builtin
+    b i16
+//    ^^^ support.type.builtin
+    c i32
+//    ^^^ support.type.builtin
+    d i64
+//    ^^^ support.type.builtin
+    e bool
+//    ^^^^ support.type.builtin
+    f string
+//    ^^^^^^ support.type.builtin
+    g void
+//     ^^^^ support.type.builtin
+    h byte
+//      ^^^^ support.type.builtin
 }
 
-fun (s string) append (b byte) {}
-//     ^^^^^^ support.type
-//                       ^^^^ support.type
+fun type_casting() {
+    x := i32(a)
+//       ^^^ support.type.builtin
+    y := &void(0)
+//        ^^^^ support.type.builtin
+}
 
-fun (f Foo) method(b bool) {}
-//     ^^^ support.type
-//                   ^^^^ support.type
+// METHOD RECEIVERS
+
+fun (s []i32) simple_receiver () {}
+//       ^^^ support.type.receiver
+
+fun (f Foo) struct_method() {}
+//     ^^^ support.type.receiver
+
+fun (a []&ast.TypeSymbol) custom_defined() {}
+//        ^^^^^^^^^^^^^^ support.type.receiver
+
+fun (bpp &&byte) complex() {}
+//         ^^^^ support.type.receiver
+
+fun (a [][]string) nested_arr() {}
+//         ^^^^^^ support.type.receiver

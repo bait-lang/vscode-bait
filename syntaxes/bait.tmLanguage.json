@@ -22,11 +22,13 @@
 			"patterns": [
 				{
 					"name": "meta.function.definition",
-					"begin": "^(fun)\\s+",
+					"begin": "^(fun)\\s*(?:\\((\\w+)\\s*(\\w+)\\))?",
 					"beginCaptures": {
-						"1": { "name": "keyword.fun" }
+						"1": { "name": "keyword.fun" },
+						"2": { "name": "variable" },
+						"3": { "name": "entity.name.type" }
 					},
-					"end": "(\\w+)",
+					"end": "(\\w+)\\s*\\(",
 					"endCaptures": {
 						"1": { "name": "entity.name.function" }
 					}

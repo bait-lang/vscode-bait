@@ -1,0 +1,14 @@
+// SYNTAX TEST "source.bait" "functions"
+
+fun spam_eggs() {
+// <-- keyword.fun
+//  ^^^^^^^^^ entity.name.function
+
+    call_fun(param)
+//  ^^^^^^^^ entity.name.function
+}
+
+fun (rec FooStruct) method() {}
+//   ^^^ variable
+//   ^^^ - entity.name.function
+//                  ^^^^^^ entity.name.function

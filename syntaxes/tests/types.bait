@@ -8,12 +8,14 @@ fun nums(a i8, b i16, c i32, d i64) {
 
     x := i32(a)
 //       ^^^ entity.name.type
+    y := &void(0)
+//        ^^^^ entity.name.type
 }
 
-fun strings(s string, b byte) {}
-//            ^^^^^^ entity.name.type
-//                      ^^^^ entity.name.type
+fun (s string) append (b byte) {}
+//     ^^^^^^ entity.name.type
+//                       ^^^^ entity.name.type
 
-fun other(b bool) bool {}
-//          ^^^^ entity.name.type
-//                ^^^^ entity.name.type
+fun (f Foo) method(b bool) {}
+//     ^^^ entity.name.type
+//                   ^^^^ entity.name.type

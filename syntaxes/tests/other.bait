@@ -9,10 +9,7 @@ import os
     // some comment
 //  ^^^^^^^^^^^^^^^ comment
 
-fun main() {
-// <-- keyword.fun
-//  ^^^^ entity.name.function
-
+fun myfunc() {
     s := 'my string'
 //       ^^^^^^^^^^^ string
 
@@ -40,10 +37,7 @@ fun main() {
 //           ^ constant.numeric
 //                   ^^^ constant.numeric
 //                             ^ constant.numeric
-}
 
-fun fun_decl() {
-//  ^^^^^^^^ entity.name.function
-    return call_to_fun()
-//         ^^^^^^^^^^^ entity.name.function
+    return
+//  ^^^^^^ keyword.control
 }

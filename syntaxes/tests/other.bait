@@ -16,6 +16,7 @@ fun main() {
 
     funbyte := `A`
 //  ^^^ - keyword
+//  ^^^^^^^ variable
 //             ^^^ string.byte
 
     if true and false {
@@ -26,7 +27,9 @@ fun main() {
     } else if cond1 or cond2 {
 //    ^^^^ keyword.control
 //         ^^ keyword.control
+//            ^^^^^ variable
 //                  ^^ keyword.control
+//                     ^^^^^ variable
     } else {}
 //    ^^^^ keyword.control
 

@@ -6,11 +6,11 @@
 .eslintignore
 tsconfig.json
 
-# source files and dirs
+# source files
 src/
 **/scripts/
 **/tests/
-*.yml
+**/*.yml
 
 # other
 .vscode/

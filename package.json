@@ -33,7 +33,7 @@
       {
         "language": "bait",
         "scopeName": "source.bait",
-        "path": "./syntaxes/bait.tmLanguage.json"
+        "path": "./out/bait.tmGrammar.json"
       }
     ]
   },

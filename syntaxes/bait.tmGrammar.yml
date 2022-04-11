@@ -1,0 +1,66 @@
+scopeName: source.bait
+fileTypes: [.bait]
+
+patterns:
+  - include: '#comments'
+  - include: '#types'
+  - include: '#functions'
+  - include: '#keywords'
+  - include: '#numbers'
+  - include: '#strings'
+  - include: '#variables'
+
+repository:
+  comments:
+    name: comment
+    begin: //
+    end: $
+
+  functions:
+    patterns:
+      - name: meta.function.definition
+        begin: ^(fun)\s*(?:\((\w+)\s*(\w+)\))?
+        beginCaptures:
+          1:
+            name: keyword.fun
+          2:
+            name: variable
+          3:
+            name: entity.name.type
+        end: (\w+)\s*\(
+        endCaptures:
+          1:
+            name: entity.name.function
+      - name: meta.function.call
+        match: (\w+)\(
+        captures:
+          1:
+            name: entity.name.function
+
+  keywords:
+    patterns:
+      - name: keyword
+        match: \b(assert|const|false|import|package|struct|true)\b
+      - name: keyword.control
+        match: \b(and|else|for|if|or|return)\b
+
+  numbers:
+    name: constant.numeric
+    match: -?\d+
+
+  strings:
+    patterns:
+      - name: string
+        begin: "'"
+        end: "'"
+      - name: string.byte
+        begin: "`"
+        end: "`"
+
+  types:
+    name: entity.name.type
+    match: \b(bool|byte|i(8|16|32|64)|string|void)\b
+
+  variables:
+    name: variable
+    match: \b[a-z][a-z0-9_]*\b

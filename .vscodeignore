@@ -2,9 +2,18 @@
 .gitignore
 .github/
 
+# configs files
+.eslintignore
+tsconfig.json
+
+# source files and dirs
+src/
+**/scripts/
+**/tests/
+*.yml
+
 # other
 .vscode/
 *.code-workspace
-**/tests/
 **/*.map
 CONTRIBUTING.md

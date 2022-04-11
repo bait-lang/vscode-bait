@@ -3,7 +3,7 @@
 [![Version][version-badge]][marketplace-url]
 [![Installs][installs-badge]][marketplace-url]
 
-Provides language support for the [bait programming language][bait-repo].
+Provides rich language support for the [bait programming language][bait-repo].
 
 ## Installation
 Launch the command palette (<kbd>Ctrl</kbd>+<kbd>P</kbd>) and run `ext install tiabeast.vscode-bait`.

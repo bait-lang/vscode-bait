@@ -2,7 +2,7 @@
   "name": "vscode-bait",
   "displayName": "bait",
   "description": "Provides rich language support for the bait programming language.",
-  "version": "0.1.0-dev",
+  "version": "0.1.0",
   "license": "MIT",
   "repository": {
     "type": "git",

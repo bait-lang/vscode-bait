@@ -5,11 +5,11 @@
 	],
 	"patterns": [
 		{ "include": "#comments" },
+		{ "include": "#types" },
 		{ "include": "#functions" },
 		{ "include": "#keywords" },
 		{ "include": "#numbers" },
 		{ "include": "#strings" },
-		{ "include": "#types" },
 		{ "include": "#variables" }
 	],
 	"repository": {

@@ -41,7 +41,7 @@
     "compile": "tsc -p ./",
     "lint": "eslint .",
     "convert-yaml": "ts-node ./scripts/yaml2json.ts",
-    "test": "vscode-tmgrammar-test -s source.bait -g syntaxes/bait.tmLanguage.json -t \"syntaxes/tests/*.bait\"",
+    "test": "npm run convert-yaml && vscode-tmgrammar-test -s source.bait -g ./out/bait.tmGrammar.json -t \"syntaxes/tests/*.bait\"",
     "package": "vsce package",
     "install-dev-ext": "npm run test && vsce package -o out/vscode-bait-dev.vsix && code --install-extension out/vscode-bait-dev.vsix --force",
     "vscode:prepublish": "npm run compile && npm run convert-yaml",

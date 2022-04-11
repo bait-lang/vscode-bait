@@ -19,14 +19,33 @@
 			"end": "$"
 		},
 		"functions": {
-			"name": "entity.name.function",
-			"match": "\\b[a-z][a-z0-9_]*\\b\\("
+			"patterns": [
+				{
+					"name": "meta.function.definition",
+					"begin": "^(fun)\\s+",
+					"beginCaptures": {
+						"1": { "name": "keyword.fun" }
+					},
+					"end": "(\\w+)",
+					"endCaptures": {
+						"1": { "name": "entity.name.function" }
+					}
+				},
+				{
+					"name": "meta.function.call",
+					"match": "(\\w+)\\(",
+					"captures": {
+						"1": { "name": "entity.name.function" }
+					}
+				}
+			]
+
 		},
 		"keywords": {
 			"patterns": [
 				{
 					"name": "keyword",
-					"match": "\\b(assert|const|false|fun|import|package|struct|true)\\b"
+					"match": "\\b(assert|const|false|import|package|struct|true)\\b"
 				},
 				{
 					"name": "keyword.control",
@@ -54,7 +73,7 @@
 		},
 		"types": {
 			"name": "entity.name.type",
-			"match": "\\b(bool|byte|i(8|16|32|64)|string)\\b"
+			"match": "\\b(bool|byte|i(8|16|32|64)|string|void)\\b"
 		},
 		"variables": {
 			"name": "variable",

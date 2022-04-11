@@ -1,4 +1,4 @@
-// SYNTAX TEST "source.bait" "main syntax test"
+// SYNTAX TEST "source.bait" "types"
 
 fun nums(a i8, b i16, c i32, d i64) {}
 //         ^^ entity.name.type

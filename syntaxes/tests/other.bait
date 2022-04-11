@@ -10,13 +10,15 @@ import os
 //  ^^^^^^^^^^^^^^^ comment
 
 fun main() {
-// <-- keyword
+// <-- keyword.fun
+//  ^^^^ entity.name.function
+
     s := 'my string'
 //       ^^^^^^^^^^^ string
 
     funbyte := `A`
-//  ^^^ - keyword
 //  ^^^^^^^ variable
+//  ^^^ - keyword
 //             ^^^ string.byte
 
     if true and false {

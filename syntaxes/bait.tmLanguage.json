@@ -4,16 +4,23 @@
 		".bait"
 	],
 	"patterns": [
+		{ "include": "#comments" },
+		{ "include": "#functions" },
 		{ "include": "#keywords" },
+		{ "include": "#numbers" },
 		{ "include": "#strings" },
-		{ "include": "#types" },
-		{
+		{ "include": "#types" }
+	],
+	"repository": {
+		"comments": {
 			"name": "comment",
 			"begin": "//",
 			"end": "$"
-		}
-	],
-	"repository": {
+		},
+		"functions": {
+			"name": "entity.name.function",
+			"match": "\\b[a-z][a-z0-9_]*\\b\\("
+		},
 		"keywords": {
 			"patterns": [
 				{
@@ -22,9 +29,13 @@
 				},
 				{
 					"name": "keyword.control",
-					"match": "\\b(and|else|for|if|or)\\b"
+					"match": "\\b(and|else|for|if|or|return)\\b"
 				}
 			]
+		},
+		"numbers": {
+			"name": "constant.numeric",
+			"match": "-?\\d+"
 		},
 		"strings": {
 			"patterns": [
@@ -41,12 +52,8 @@
 			]
 		},
 		"types": {
-			"patterns": [
-				{
-					"name": "entity.name.type",
-					"match": "\\b(bool|byte|i(8|16|32|64)|string)\\b"
-				}
-			]
+			"name": "entity.name.type",
+			"match": "\\b(bool|byte|i(8|16|32|64)|string)\\b"
 		}
 	}
 }

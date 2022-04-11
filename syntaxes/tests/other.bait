@@ -32,4 +32,13 @@ fun main() {
 
     for i := 0; i <= 123; i += 1 {}
 //  ^^^ keyword.control
+//           ^ constant.numeric
+//                   ^^^ constant.numeric
+//                             ^ constant.numeric
+}
+
+fun fun_decl() {
+//  ^^^^^^^^ entity.name.function
+    return call_to_fun()
+//         ^^^^^^^^^^^ entity.name.function
 }

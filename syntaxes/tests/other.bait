@@ -1,1 +1,35 @@
 // SYNTAX TEST "source.bait" "main syntax test"
+
+package main
+// <------ keyword
+
+import os
+// <----- keyword
+
+    // some comment
+//  ^^^^^^^^^^^^^^^ comment
+
+fun main() {
+// <-- keyword
+    s := 'my string'
+//       ^^^^^^^^^^^ string
+
+    funbyte := `A`
+//  ^^^ - keyword
+//             ^^^ string.byte
+
+    if true and false {
+//  ^^ keyword.control
+//     ^^^^ keyword
+//          ^^^ keyword.control
+//              ^^^^^ keyword
+    } else if cond1 or cond2 {
+//    ^^^^ keyword.control
+//         ^^ keyword.control
+//                  ^^ keyword.control
+    } else {}
+//    ^^^^ keyword.control
+
+    for i := 0; i <= 123; i += 1 {}
+//  ^^^ keyword.control
+}

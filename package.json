@@ -42,9 +42,9 @@
 		"lint": "eslint .",
 		"test": "vscode-tmgrammar-test -s source.bait -g syntaxes/bait.tmLanguage.json -t \"syntaxes/tests/*.bait\"",
 		"package": "vsce package",
-		"install-dev-ext": "npm install && npm run test && vsce package -o ./out/vscode-bait-dev.vsix && code --install-extension ./out/vscode-bait-dev.vsix --force",
+		"install-dev-ext": "npm run test && vsce package -o ./out/vscode-bait-dev.vsix && code --install-extension ./out/vscode-bait-dev.vsix --force",
 		"vscode:prepublish": "npm run compile",
-		"postinstall-dev-ext": "echo 'Please reload the window (run `>reload window` from command palette)'"
+		"postinstall-dev-ext": "echo \"Please reload the window (run '>reload window' from command palette)\""
   },
   "devDependencies": {
 		"@types/node": "^14.18.12",

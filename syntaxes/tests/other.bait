@@ -1,34 +1,34 @@
 // SYNTAX TEST "source.bait" "main syntax test"
 
 package main
-// <------ keyword
+// <------ keyword.other
 
 import os
-// <----- keyword
+// <----- keyword.other
 
     // some comment
-//  ^^^^^^^^^^^^^^^ comment
+//  ^^^^^^^^^^^^^^^ comment.line.double-slash
 
 fun myfunc() {
     s := 'my string'
-//       ^^^^^^^^^^^ string
+//       ^^^^^^^^^^^ string.quoted.single
 
     funbyte := `A`
-//  ^^^^^^^ variable
+//  ^^^^^^^ variable.other
 //  ^^^ - keyword
-//             ^^^ string.byte
+//             ^^^ string.other.byte
 
     if true and false {
 //  ^^ keyword.control
-//     ^^^^ keyword
-//          ^^^ keyword.control
-//              ^^^^^ keyword
+//     ^^^^ constant.language
+//          ^^^ keyword.operator
+//              ^^^^^ constant.language
     } else if cond1 or cond2 {
 //    ^^^^ keyword.control
 //         ^^ keyword.control
-//            ^^^^^ variable
-//                  ^^ keyword.control
-//                     ^^^^^ variable
+//            ^^^^^ variable.other
+//                  ^^ keyword.operator
+//                     ^^^^^ variable.other
     } else {}
 //    ^^^^ keyword.control
 

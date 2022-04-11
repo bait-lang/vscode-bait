@@ -12,7 +12,7 @@ patterns:
 
 repository:
   comments:
-    name: comment
+    name: comment.line.double-slash
     begin: //
     end: $
 
@@ -24,9 +24,9 @@ repository:
           1:
             name: keyword.fun
           2:
-            name: variable
+            name: variable.parameter
           3:
-            name: entity.name.type
+            name: support.type
         end: (\w+)\s*\(
         endCaptures:
           1:
@@ -39,10 +39,14 @@ repository:
 
   keywords:
     patterns:
-      - name: keyword
-        match: \b(assert|const|false|import|package|struct|true)\b
+      - name: keyword.other
+        match: \b(assert|const|import|package|struct)\b
       - name: keyword.control
-        match: \b(and|else|for|if|or|return)\b
+        match: \b(else|for|if|return)\b
+      - name: keyword.operator
+        match: \b(and|or)\b
+      - name: constant.language
+        match: \b(false|true)\b
 
   numbers:
     name: constant.numeric
@@ -50,17 +54,17 @@ repository:
 
   strings:
     patterns:
-      - name: string
+      - name: string.quoted.single
         begin: "'"
         end: "'"
-      - name: string.byte
+      - name: string.other.byte
         begin: "`"
         end: "`"
 
   types:
-    name: entity.name.type
+    name: support.type
     match: \b(bool|byte|i(8|16|32|64)|string|void)\b
 
   variables:
-    name: variable
+    name: variable.other
     match: \b[a-z][a-z0-9_]*\b

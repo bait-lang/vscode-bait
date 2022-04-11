@@ -1,21 +1,21 @@
 // SYNTAX TEST "source.bait" "types"
 
 fun nums(a i8, b i16, c i32, d i64) {
-//         ^^ entity.name.type
-//               ^^^ entity.name.type
-//                      ^^^ entity.name.type
-//                             ^^^ entity.name.type
+//         ^^ support.type
+//               ^^^ support.type
+//                      ^^^ support.type
+//                             ^^^ support.type
 
     x := i32(a)
-//       ^^^ entity.name.type
+//       ^^^ support.type
     y := &void(0)
-//        ^^^^ entity.name.type
+//        ^^^^ support.type
 }
 
 fun (s string) append (b byte) {}
-//     ^^^^^^ entity.name.type
-//                       ^^^^ entity.name.type
+//     ^^^^^^ support.type
+//                       ^^^^ support.type
 
 fun (f Foo) method(b bool) {}
-//     ^^^ entity.name.type
-//                   ^^^^ entity.name.type
+//     ^^^ support.type
+//                   ^^^^ support.type

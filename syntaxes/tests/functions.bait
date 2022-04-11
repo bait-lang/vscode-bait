@@ -9,6 +9,6 @@ fun spam_eggs() {
 }
 
 fun (rec FooStruct) method() {}
-//   ^^^ variable
+//   ^^^ variable.parameter
 //   ^^^ - entity.name.function
 //                  ^^^^^^ entity.name.function

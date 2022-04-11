@@ -1,6 +1,6 @@
 import * as yaml from 'js-yaml'
 import * as fs from 'fs'
-import path = require('path')
+import * as path from 'path'
 
 const yml_paths = [
 	'./language-configuration.yml'

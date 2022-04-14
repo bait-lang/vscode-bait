@@ -1,4 +1,12 @@
 # Changelog
+## unreleased
+
+**Additions:**
+- highlight `not`
+
+**Changes:**
+- change scope for `and` and `or` to `keyword.control`
+
 ## 0.2.0
 _11 April 2022_
 

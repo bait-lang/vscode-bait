@@ -42,9 +42,7 @@ repository:
       - name: keyword.other
         match: \b(assert|const|import|package|struct)\b
       - name: keyword.control
-        match: \b(else|for|if|return)\b
-      - name: keyword.operator
-        match: \b(and|or)\b
+        match: \b(and|else|for|if|not|or|return)\b
       - name: constant.language
         match: \b(false|true)\b
 

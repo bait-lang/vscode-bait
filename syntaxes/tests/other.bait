@@ -18,16 +18,17 @@ fun myfunc() {
 //  ^^^ - keyword
 //             ^^^ string.other.byte
 
-    if true and false {
+    if true and not false {
 //  ^^ keyword.control
 //     ^^^^ constant.language
-//          ^^^ keyword.operator
-//              ^^^^^ constant.language
+//          ^^^ keyword.control
+//              ^^^ keyword.control
+//                  ^^^^^ constant.language
     } else if cond1 or cond2 {
 //    ^^^^ keyword.control
 //         ^^ keyword.control
 //            ^^^^^ variable.other
-//                  ^^ keyword.operator
+//                  ^^ keyword.control
 //                     ^^^^^ variable.other
     } else {}
 //    ^^^^ keyword.control

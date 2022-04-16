@@ -9,7 +9,7 @@ import os
     // some comment
 //  ^^^^^^^^^^^^^^^ comment.line.double-slash
 
-fun myfunc() {
+fun myfun() {
     s := 'my string'
 //       ^^^^^^^^^^^ string.quoted.single
 

@@ -4,8 +4,7 @@ about: Bug report
 labels: bug, needs-triage
 ---
 
-- VS Code Version:
-- Extension (vscode-bait) Version:
+Extension Version:
 
 **What did you do?**
 

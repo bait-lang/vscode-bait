@@ -1,4 +1,4 @@
-// SYNTAX TEST "source.bait" "functions"
+// SYNTAX TEST "source.bait" "#functions"
 
 fun spam_eggs() {
 // <-- keyword.fun
@@ -8,7 +8,22 @@ fun spam_eggs() {
 //  ^^^^^^^^ entity.name.function
 }
 
-fun (rec FooStruct) method() {}
-//   ^^^ variable.parameter
-//   ^^^ - entity.name.function
-//                  ^^^^^^ entity.name.function
+fun (f Foo) method() {}
+//   ^ variable.parameter
+//   ^ - entity.name.function
+//     ^^^ support.type.receiver
+//          ^^^^^^ entity.name.function
+
+fun(tsym []&ast.TypeSymbol) also_method() {}
+//  ^^^^ variable.parameter
+//          ^^^^^^^^^^^^^^ support.type.receiver
+//                          ^^^^^^^^^^^ entity.name.function
+
+fun (s []i32) simple_receiver () {}
+//       ^^^ support.type.receiver
+
+fun (bpp &&byte) complex() {}
+//         ^^^^ support.type.receiver
+
+fun (a [][]string) nested_arr() {}
+//         ^^^^^^ support.type.receiver

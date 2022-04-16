@@ -1,6 +1,4 @@
-// SYNTAX TEST "source.bait" "types"
-
-// BUILTIN TYPES
+// SYNTAX TEST "source.bait" "#types"
 
 struct BuiltinTypes {
     a i8
@@ -17,8 +15,14 @@ struct BuiltinTypes {
 //    ^^^^^^ support.type.builtin
     g void
 //     ^^^^ support.type.builtin
-    h byte
-//      ^^^^ support.type.builtin
+    h u8
+//    ^^ support.type.builtin
+    i u16
+//    ^^^ support.type.builtin
+    j u32
+//    ^^^ support.type.builtin
+    k u64
+//    ^^^ support.type.builtin
 }
 
 fun type_casting() {
@@ -27,20 +31,3 @@ fun type_casting() {
     y := &void(0)
 //        ^^^^ support.type.builtin
 }
-
-// METHOD RECEIVERS
-
-fun (s []i32) simple_receiver () {}
-//       ^^^ support.type.receiver
-
-fun (f Foo) struct_method() {}
-//     ^^^ support.type.receiver
-
-fun (a []&ast.TypeSymbol) custom_defined() {}
-//        ^^^^^^^^^^^^^^ support.type.receiver
-
-fun (bpp &&byte) complex() {}
-//         ^^^^ support.type.receiver
-
-fun (a [][]string) nested_arr() {}
-//         ^^^^^^ support.type.receiver

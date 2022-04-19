@@ -1,11 +1,14 @@
 # Changelog
-## unreleased
+## 0.2.1
+_19 April 2022_
 
 **Additions:**
-- highlight `not`
+- highlight keywords: `break`, `continue`, `not`
+- highlight types: `u8`, `u16`, `u32`, `u64`, `f32`, `f64`
 
 **Changes:**
 - change scope for `and` and `or` to `keyword.control`
+- remove highlighting for `byte` as it is no type anymore
 
 ## 0.2.0
 _11 April 2022_

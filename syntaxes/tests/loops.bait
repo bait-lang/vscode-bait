@@ -1,0 +1,14 @@
+// SYNTAX TEST "source.bait" "loops"
+
+fun main() {
+    for i := 0; i <= 123; i += 1 {
+//  ^^^ keyword.control
+//           ^ constant.numeric
+//                   ^^^ constant.numeric
+//                             ^ constant.numeric
+    continue
+//  ^^^^^^^^ keyword.control
+    break
+//  ^^^^^ keyword.control
+    }
+}

@@ -23,6 +23,10 @@ struct BuiltinTypes {
 //    ^^^ support.type.builtin
     k u64
 //    ^^^ support.type.builtin
+    l f32
+//    ^^^ support.type.builtin
+    m f64
+//    ^^^ support.type.builtin
 }
 
 fun type_casting() {

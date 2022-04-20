@@ -6,9 +6,6 @@ package main
 import os
 // <----- keyword.other
 
-    // some comment
-//  ^^^^^^^^^^^^^^^ comment.line.double-slash
-
 fun myfun() {
     s := 'my string'
 //       ^^^^^^^^^^^ string.quoted.single

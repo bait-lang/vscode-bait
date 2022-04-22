@@ -6,6 +6,9 @@ package main
 import os
 // <----- keyword.other
 
+type CustomFunType = fun() string
+// <--- keyword.other
+
 fun myfun() {
     s := 'my string'
 //       ^^^^^^^^^^^ string.quoted.single

@@ -1,4 +1,11 @@
 # Changelog
+## 0.2.2
+_26_ April 2022_
+
+**Additions:**
+- highlight keywords: `type`, `enum`, `match`
+- support for block comments
+
 ## 0.2.1
 _19 April 2022_
 

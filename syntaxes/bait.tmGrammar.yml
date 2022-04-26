@@ -52,9 +52,9 @@ repository:
   keywords:
     patterns:
       - name: keyword.other
-        match: \b(assert|const|import|package|struct|type)\b
+        match: \b(assert|const|enum|import|package|struct|type)\b
       - name: keyword.control
-        match: \b(and|break|continue|else|for|if|not|or|return)\b
+        match: \b(and|break|continue|else|for|if|match|not|or|return)\b
       - name: constant.language
         match: \b(false|true)\b
 

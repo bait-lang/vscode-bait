@@ -9,6 +9,13 @@ import os
 type CustomFunType = fun() string
 // <--- keyword.other
 
+enum Color {
+// <--- keyword.other
+    red
+    green
+    blue
+}
+
 fun myfun() {
     s := 'my string'
 //       ^^^^^^^^^^^ string.quoted.single
@@ -38,6 +45,13 @@ fun myfun() {
 //           ^ constant.numeric
 //                   ^^^ constant.numeric
 //                             ^ constant.numeric
+
+    c := Color.red
+    match c {
+//  ^^^^^ keyword.control
+        .green {}
+        else {}
+    }
 
     return
 //  ^^^^^^ keyword.control

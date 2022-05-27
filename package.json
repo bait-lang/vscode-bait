@@ -40,7 +40,7 @@
 	"scripts": {
 		"compile": "tsc -p ./",
 		"lint": "eslint .",
-		"test": "vscode-tmgrammar-test -s source.bait -g ./out/bait.tmGrammar.json -t \"syntaxes/tests/*.bait\"",
+		"test": "vscode-tmgrammar-test -g ./out/bait.tmGrammar.json \"syntaxes/tests/*.bait\"",
 		"install-dev-ext": "npm run test && vsce package -o out/vscode-bait-dev.vsix && code --install-extension out/vscode-bait-dev.vsix --force",
 		"package": "vsce package",
 		"convert-yaml": "yaml2json language-configuration.yml syntaxes/bait.tmGrammar.yml",

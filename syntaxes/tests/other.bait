@@ -17,13 +17,9 @@ enum Color {
 }
 
 fun myfun() {
-    s := 'my string'
-//       ^^^^^^^^^^^ string.quoted.single
-
     funbyte := `A`
 //  ^^^^^^^ variable.other
 //  ^^^ - keyword
-//             ^^^ string.other.byte
 
     if true and not false {
 //  ^^ keyword.control

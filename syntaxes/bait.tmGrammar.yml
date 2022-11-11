@@ -67,9 +67,15 @@ repository:
       - name: string.quoted.single
         begin: "'"
         end: "'"
+        patterns:
+          - include: '#string-escaped-char'
       - name: string.other.byte
         begin: "`"
         end: "`"
+
+  string-escaped-char:
+    name: constant.character.escape.bait
+    match: \\\'
 
   types:
     name: support.type.builtin

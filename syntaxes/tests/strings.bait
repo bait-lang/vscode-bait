@@ -1,0 +1,12 @@
+// SYNTAX TEST "source.bait" "string highlight test"
+
+fun foo() {
+    s := 'my string'
+//       ^^^^^^^^^^^ string.quoted.single
+
+    esc := 'don\'t'
+//         ^^^^^^^^ string.quoted.single
+
+    b := `A`
+//       ^^^ string.other.byte
+}

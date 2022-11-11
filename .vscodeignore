@@ -1,19 +1,13 @@
-# version control
-.gitignore
-.github/
+# ignore everything
+*
+*/
 
-# configs files
-.eslintignore
-tsconfig.json
+# whitelist needed files
+!package.json
 
-# source files
-src/
-**/scripts/
-**/tests/
-**/*.yml
+!out/*.js
+!out/*.json
 
-# other
-.vscode/
-*.code-workspace
-**/*.map
-CONTRIBUTING.md
+!README.md
+!LICENSE
+!CHANGELOG.md

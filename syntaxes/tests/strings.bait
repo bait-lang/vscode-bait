@@ -3,9 +3,13 @@
 fun foo() {
     s := 'my string'
 //       ^^^^^^^^^^^ string.quoted.single
+    s2 := "double"
+//        ^^^^^^^^ string.quoted.double
 
     esc := 'don\'t'
 //         ^^^^^^^^ string.quoted.single
+    esc2 := "du\"b"
+//          ^^^^^^^ string.quoted.double
 
     b := `A`
 //       ^^^ string.other.byte

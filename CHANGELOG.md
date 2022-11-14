@@ -1,4 +1,14 @@
 # Changelog
+## 0.2.3
+_14 November 2022_
+**Additions:**
+- highlight double quoted strings
+
+**Fixes**
+- do not highlight `fun` in `func`
+- add support for escaped quotes in strings
+- update readme badges
+
 ## 0.2.2
 _26_ April 2022_
 

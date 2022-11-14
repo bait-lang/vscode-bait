@@ -27,3 +27,7 @@ fun (bpp &&byte) complex() {}
 
 fun (a [][]string) nested_arr() {}
 //         ^^^^^^ support.type.receiver
+
+// INVALID CODE
+function bad() {}
+// <-- - keyword.fun

@@ -31,7 +31,7 @@ repository:
   functions:
     patterns:
       - name: meta.function.definition
-        begin: ^(fun)\s*(?:\((\w+)\W+([a-zA-Z0-9.]+)\))?
+        begin: ^(fun\b)\s*(?:\((\w+)\W+([a-zA-Z0-9.]+)\))?
         beginCaptures:
           1:
             name: keyword.fun

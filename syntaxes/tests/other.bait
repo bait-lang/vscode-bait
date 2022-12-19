@@ -1,11 +1,5 @@
 // SYNTAX TEST "source.bait" "main syntax test"
 
-package main
-// <------ keyword.other
-
-import os
-// <----- keyword.other
-
 type CustomFunType = fun() string
 // <--- keyword.other
 
@@ -36,12 +30,6 @@ fun myfun() {
 //                     ^^^^^ variable.other
     } else {}
 //    ^^^^ keyword.control
-
-    for i := 0; i <= 123; i += 1 {}
-//  ^^^ keyword.control
-//           ^ constant.numeric
-//                   ^^^ constant.numeric
-//                             ^ constant.numeric
 
     c := Color.red
     match c {

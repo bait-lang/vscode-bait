@@ -1,0 +1,10 @@
+// SYNTAX TEST "source.bait" "Package declaration and imports"
+
+package main
+// <------ keyword.other
+
+import os
+// <----- keyword.other
+
+import custom.sha1 as mysha1
+//                 ^^ keyword.other

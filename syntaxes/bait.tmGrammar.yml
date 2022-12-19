@@ -69,11 +69,13 @@ repository:
         end: "'"
         patterns:
           - include: '#string-escaped-char'
+          - include: '#string-interpolation'
       - name: string.quoted.double
         begin: "\""
         end: "\""
         patterns:
           - include: '#string-escaped-char'
+          - include: '#string-interpolation'
       - name: string.other.byte
         begin: "`"
         end: "`"
@@ -87,6 +89,17 @@ repository:
   char-escaped-char:
     name: constant.character.escape.bait
     match: \\[`\\]
+
+  string-interpolation:
+    name: meta.string.interpolated
+    match: (\${)([^}]*)(})
+    captures:
+      1:
+        name: punctuation.definition.template-expression.begin
+      2:
+        name: variable.other.interpolated
+      3:
+        name: punctuation.definition.template-expression.end
 
   types:
     name: support.type.builtin

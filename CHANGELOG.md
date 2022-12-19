@@ -1,6 +1,18 @@
 # Changelog
+## 0.2.4
+_19 December 2022_
+
+**Breaking**
+- Require VS Code >= 1.74.0
+
+**Additions**
+- Highlight `mut`, `as` and `in`
+- Highlight interpolated strings
+- Fixes for escaped characters in strings and char literals
+
 ## 0.2.3
 _14 November 2022_
+
 **Additions:**
 - highlight double quoted strings
 
@@ -10,7 +22,7 @@ _14 November 2022_
 - update readme badges
 
 ## 0.2.2
-_26_ April 2022_
+_26 April 2022_
 
 **Additions:**
 - highlight keywords: `type`, `enum`, `match`

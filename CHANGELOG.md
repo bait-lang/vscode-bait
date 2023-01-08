@@ -1,4 +1,10 @@
 # Changelog
+## 0.2.5
+_upcoming_
+
+**Additions**
+- Highlight `global`
+
 ## 0.2.4
 _19 December 2022_
 

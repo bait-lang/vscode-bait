@@ -1,5 +1,8 @@
 // SYNTAX TEST "source.bait" "main syntax test"
 
+global my_global_var := 'val'
+// <------ keyword.other
+
 type CustomFunType = fun() string
 // <--- keyword.other
 

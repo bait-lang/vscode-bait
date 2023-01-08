@@ -11,7 +11,7 @@ Launch the command palette (<kbd>Ctrl</kbd>+<kbd>P</kbd>) and run `ext install t
 The extension is also available on Open VSX: https://open-vsx.org/extension/tiabeast/vscode-bait
 
 ## License
-The source code is licensed under the [MIT license](LICENSE).
+This repository is licensed under the [MIT license](LICENSE).
 
 <!-- links -->
 [ci-badge]: https://github.com/tiabeast/vscode-bait/actions/workflows/ci.yml/badge.svg

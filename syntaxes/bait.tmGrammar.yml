@@ -58,7 +58,7 @@ repository:
       - name: keyword.other
         match: \b(as|assert|const|enum|global|import|mut|package|struct|type)\b
       - name: keyword.control
-        match: \b(and|break|continue|else|for|if|in|match|not|or|return)\b
+        match: \b(and|break|continue|else|for|if|in|is|match|not|or|return)\b
       - name: constant.language
         match: \b(false|true)\b
 

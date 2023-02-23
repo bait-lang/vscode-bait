@@ -4,22 +4,22 @@ global my_global_var := 'val'
 // <------ keyword.other
 
 type CustomFunType = fun() string
-// <--- keyword.other
+// <---- keyword.other
 
-type SumType = Foo | Bar
+pub type SumType = Foo | Bar
+// <--- keyword.other
 
 enum Color {
-// <--- keyword.other
+// <---- keyword.other
     red
     green
     blue
 }
 
 fun myfun() {
-    mut funbyte := `A`
+    mut c := `A`
 //  ^^^ keyword.other
-//      ^^^^^^^ variable.other
-//      ^^^ - keyword.fun
+//      ^ variable.other
 
     if true and not false {
 //  ^^ keyword.control

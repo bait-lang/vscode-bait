@@ -3,7 +3,7 @@
 _upcoming_
 
 **Additions**
-- Highlight `global` and `is` keywords
+- Highlight `global`, `is` and `pub` keywords
 
 ## 0.2.4
 _19 December 2022_

@@ -6,6 +6,10 @@ fun spam_eggs() {
 
     call_fun(param)
 //  ^^^^^^^^ entity.name.function
+
+    funvar := 1
+//  ^^^^^^ variable.other
+//  ^^^ - keyword.fun
 }
 
 fun (f Foo) method() {}

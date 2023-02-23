@@ -6,9 +6,6 @@ global my_global_var := 'val'
 type CustomFunType = fun() string
 // <---- keyword.other
 
-pub type SumType = Foo | Bar
-// <--- keyword.other
-
 enum Color {
 // <---- keyword.other
     red

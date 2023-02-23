@@ -1,0 +1,9 @@
+// SYNTAX TEST "source.bait" "pub keyword"
+
+pub type SumType = Foo | Bar
+// <--- keyword.other
+
+pub fun foo() {}
+// <-- keyword.other
+// ^ - keyword.other
+//  ^^^ keyword.fun

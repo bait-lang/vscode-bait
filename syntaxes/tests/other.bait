@@ -18,6 +18,9 @@ fun myfun() {
 //  ^^^ keyword.other
 //      ^ variable.other
 
+    typeof c
+//  ^^^^^^ keyword.other
+
     if true and not false {
 //  ^^ keyword.control
 //     ^^^^ constant.language

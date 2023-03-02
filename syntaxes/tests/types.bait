@@ -5,16 +5,10 @@ struct BuiltinTypes {
 //    ^^ support.type.builtin
     b i16
 //    ^^^ support.type.builtin
-    c i32
-//    ^^^ support.type.builtin
     d i64
 //    ^^^ support.type.builtin
     e bool
 //    ^^^^ support.type.builtin
-    f string
-//    ^^^^^^ support.type.builtin
-    g void
-//     ^^^^ support.type.builtin
     h u8
 //    ^^ support.type.builtin
     i u16
@@ -25,13 +19,15 @@ struct BuiltinTypes {
 //    ^^^ support.type.builtin
     l f32
 //    ^^^ support.type.builtin
-    m f64
+    n f64
 //    ^^^ support.type.builtin
+    m map[string]i32
+//    ^^^ support.type.builtin
+//        ^^^^^^ support.type.builtin
+//               ^^^ support.type.builtin
 }
 
 fun type_casting() {
     x := i32(a)
 //       ^^^ support.type.builtin
-    y := &void(0)
-//        ^^^^ support.type.builtin
 }

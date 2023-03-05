@@ -6,10 +6,6 @@ fun spam_eggs() {
 
     call_fun(param)
 //  ^^^^^^^^ entity.name.function
-
-    funvar := 1
-//  ^^^^^^ variable.other
-//  ^^^ - keyword.fun
 }
 
 fun (f Foo) method() {}
@@ -32,6 +28,14 @@ fun (bpp &&byte) complex() {}
 fun (a [][]string) nested_arr() {}
 //         ^^^^^^ support.type.receiver
 
+type Fn := fun (i32, i32) i32
+//         ^^^ keyword.fun
+
 // INVALID CODE
-function bad() {}
+function bad() {
 // <-- - keyword.fun
+
+    funvar := 1
+//  ^^^^^^ variable.other
+//  ^^^ - keyword.fun
+}

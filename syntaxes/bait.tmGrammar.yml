@@ -57,6 +57,8 @@ repository:
 
   keywords:
     patterns:
+      - name: keyword.fun
+        match: \bfun\b
       - name: keyword.other
         match: \b(as|assert|const|enum|global|import|mut|package|pub|struct|type|typeof)\b
       - name: keyword.control

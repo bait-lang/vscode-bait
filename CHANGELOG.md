@@ -4,6 +4,7 @@ _upcoming_
 
 **Changes**
 - Highlight `global`, `is`, `map`, `pub` and `typeof` keywords
+- Highlight `fun` in type alias definitions
 - Remove highlighting for `void`
 
 ## 0.2.4

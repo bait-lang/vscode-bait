@@ -3,7 +3,7 @@
 # Copyright (c) 2022-present Lukas Neubert.
 
 scopeName: source.bait
-fileTypes: [.bait]
+fileTypes: [.bt]
 
 patterns:
   - include: '#comments'

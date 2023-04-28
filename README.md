@@ -1,9 +1,9 @@
-# bait language support for VS Code
+# Bait language support for VS Code
 [![CI][ci-badge]][ci-status]
 [![Marketplace Installs][badge-installs-market]][vs-marketplace]
 [![Open VSX Installs][badge-installs-vsx]][open-vsx]
 
-Provides rich language support for the [bait programming language][bait-repo].
+Provides rich language support for the [Bait Programming Language][bait-repo].
 
 ## Installation
 Launch the command palette (<kbd>Ctrl</kbd>+<kbd>P</kbd>) and run `ext install tiabeast.vscode-bait`.

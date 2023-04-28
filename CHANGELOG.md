@@ -1,6 +1,6 @@
 # Changelog
-## 0.2.5
-_upcoming_
+## 0.3.0
+_28 April 2023_
 
 **Changes**
 - Highlight `global`, `is`, `map`, `pub` and `typeof` keywords

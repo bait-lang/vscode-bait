@@ -1,4 +1,10 @@
 # Changelog
+## 0.4.0
+_upcoming_
+
+**Changes**
+- Switch License from MIT to MPL-2.0
+
 ## 0.3.0
 _28 April 2023_
 

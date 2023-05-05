@@ -2,8 +2,8 @@
 	"name": "vscode-bait",
 	"displayName": "bait",
 	"description": "Provides rich language support for the Bait Programming Language.",
-	"version": "0.3.0",
-	"license": "MIT",
+	"version": "0.4.0-dev",
+	"license": "MPL-2.0",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/tiabeast/vscode-bait"

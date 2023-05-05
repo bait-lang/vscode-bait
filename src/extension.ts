@@ -1,6 +1,6 @@
 // This file is part of vscode-bait.
-// The content is subject to the terms of the MIT license.
 // Copyright (c) 2022-present Lukas Neubert.
+// This Source Code Form is subject to the terms of the Mozilla Public License 2.0.
 
 import * as vscode from 'vscode';
 

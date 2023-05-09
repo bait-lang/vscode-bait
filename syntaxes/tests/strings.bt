@@ -25,3 +25,7 @@ mut i := 'a ${v1} b ${v2} c'
 //            ^^ variable.other.interpolated
 //              ^ punctuation.definition.template-expression.end
 //                  ^^^^^ meta.string.interpolated
+
+i = '\${}'
+//   ^^ constant.character.escape.bait
+//    ^^^ - meta.string.interpolated

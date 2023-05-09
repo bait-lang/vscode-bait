@@ -92,7 +92,7 @@ repository:
 
   string-escaped-char:
     name: constant.character.escape.bait
-    match: \\[\'\"\\]
+    match: \\[\'\"\\\$]
 
   char-escaped-char:
     name: constant.character.escape.bait

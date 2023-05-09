@@ -1,29 +1,27 @@
 // SYNTAX TEST "source.bait" "string highlight test"
 
-fun foo() {
-    s := 'my string'
-//       ^^^^^^^^^^^ string.quoted.single
-    s2 := "double"
-//        ^^^^^^^^ string.quoted.double
+s := 'my string'
+//   ^^^^^^^^^^^ string.quoted.single
+s2 := "double"
+//    ^^^^^^^^ string.quoted.double
 
-    mut e := 'don\'t'
-//           ^^^^^^^^ string.quoted.single
-    e = '\\'
-//      ^^^^ string.quoted.single
-    e = "du\"b"
-//      ^^^^^^^ string.quoted.double
+mut e := 'don\'t'
+//       ^^^^^^^^ string.quoted.single
+e = '\\'
+//  ^^^^ string.quoted.single
+e = "du\"b"
+//  ^^^^^^^ string.quoted.double
 
-    mut b := `A`
-//           ^^^ string.other.byte
-    b = `\``
-//      ^^^^ string.other.byte
-    b = `\\`
-//      ^^^^ string.other.byte
+mut b := `A`
+//       ^^^ string.other.byte
+b = `\``
+//  ^^^^ string.other.byte
+b = `\\`
+//  ^^^^ string.other.byte
 
-    mut i := 'a ${v1} b ${v2} c'
-//              ^^^^^ meta.string.interpolated
-//              ^^ punctuation.definition.template-expression.begin
-//                ^^ variable.other.interpolated
-//                  ^ punctuation.definition.template-expression.end
-//                      ^^^^^ meta.string.interpolated
-}
+mut i := 'a ${v1} b ${v2} c'
+//          ^^^^^ meta.string.interpolated
+//          ^^ punctuation.definition.template-expression.begin
+//            ^^ variable.other.interpolated
+//              ^ punctuation.definition.template-expression.end
+//                  ^^^^^ meta.string.interpolated

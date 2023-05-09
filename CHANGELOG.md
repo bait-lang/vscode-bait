@@ -2,6 +2,9 @@
 ## 0.4.0
 _upcoming_
 
+**Fixes**
+- Do not highlight `'\${}'` as string interpolation
+
 **Changes**
 - Switch License from MIT to MPL-2.0
 

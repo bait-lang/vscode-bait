@@ -6,6 +6,7 @@ scopeName: source.bait
 fileTypes: [.bt]
 
 patterns:
+  - include: '#attributes'
   - include: '#comments'
   - include: '#types'
   - include: '#functions'
@@ -15,6 +16,16 @@ patterns:
   - include: '#variables'
 
 repository:
+  attributes:
+    name: meta.attribute
+    begin: ^(@\w+)(:\s*)?
+    end: $
+    beginCaptures:
+      1:
+        name: support.other.attribute
+    patterns:
+      - include: '#strings'
+
   comments:
     patterns:
       - name: comment.line.double-slash

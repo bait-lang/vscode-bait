@@ -2,11 +2,13 @@
 ## 0.4.0
 _upcoming_
 
+**Additions and Changes**
+- Add tokenization for attributes
+- Switch License from MIT to MPL-2.0
+
 **Fixes**
 - Do not highlight `'\${}'` as string interpolation
 
-**Changes**
-- Switch License from MIT to MPL-2.0
 
 ## 0.3.0
 _28 April 2023_

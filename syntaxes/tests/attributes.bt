@@ -1,0 +1,7 @@
+// SYNTAX TEST "source.bait" "#attributes"
+
+@deprecated: 'msg'
+// <----------------- meta.attribute
+// <---------- support.other.attribute
+//           ^^^^^ string.quoted.single
+fun spam_eggs() {}

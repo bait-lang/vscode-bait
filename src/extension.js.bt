@@ -1,5 +1,6 @@
 // Copyright (c) 2022-present Lukas Neubert.
 // This Source Code is subject to the terms of the Mozilla Public License 2.0.
+package extension
 
 import 'vscode' as #JS.vscode
 
@@ -7,3 +8,5 @@ import 'vscode' as #JS.vscode
 fun activate(context #JS.Any) {
 	println('vscode-bait activated')
 }
+
+#JS.'exports.activate = extension__activate'

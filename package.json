@@ -37,7 +37,8 @@
 		]
 	},
 	"scripts": {
-		"compile": "tsc -p ./",
+		"compile": "bait src -o out/extension.js",
+		"compile2": "tsc -p ./",
 		"test": "vscode-tmgrammar-test -g ./out/bait.tmGrammar.json \"syntaxes/tests/*.bt\"",
 		"install-dev-ext": "npm run test && vsce package -o out/vscode-bait-dev.vsix && code --install-extension out/vscode-bait-dev.vsix --force",
 		"package": "vsce package",

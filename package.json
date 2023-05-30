@@ -38,7 +38,6 @@
 	},
 	"scripts": {
 		"compile": "bait src -o out/extension.js",
-		"compile2": "tsc -p ./",
 		"test": "vscode-tmgrammar-test -g ./out/bait.tmGrammar.json \"syntaxes/tests/*.bt\"",
 		"install-dev-ext": "npm run test && vsce package -o out/vscode-bait-dev.vsix && code --install-extension out/vscode-bait-dev.vsix --force",
 		"package": "vsce package",
@@ -49,10 +48,7 @@
 	},
 	"devDependencies": {
 		"@serkonda7/yaml2json": "^0.8.0",
-		"@types/node": "^16.18.6",
-		"@types/vscode": "~1.74.0",
 		"@vscode/vsce": "~2.19.0",
-		"typescript": "~4.8.4",
 		"vscode-tmgrammar-test": "~0.1.1"
 	}
 }

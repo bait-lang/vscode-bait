@@ -9,4 +9,5 @@ fun activate(context #JS.Any) {
 	println('vscode-bait activated')
 }
 
+// TODO add attribute to handle this
 #JS.'exports.activate = extension__activate'

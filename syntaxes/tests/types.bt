@@ -25,6 +25,8 @@ struct BuiltinTypes {
 //    ^^^ support.type.builtin
 //        ^^^^^^ support.type.builtin
 //               ^^^ support.type.builtin
+    o &void
+//     ^^^^ support.type.builtin
 }
 
 fun type_casting() {

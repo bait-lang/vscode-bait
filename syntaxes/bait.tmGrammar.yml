@@ -34,15 +34,17 @@ repository:
   functions:
     patterns:
       - name: meta.function.definition
-        begin: ^(?:(pub\b)\s+)?(fun\b)\s*(?:\((\w+)\W+([a-zA-Z0-9.]+)\))?
+        begin: ^(?:(pub\b)\s+)?(fun\b)\s*(?:\((mut\b)?\s?(\w+)\W+([a-zA-Z0-9.]+)\))?
         beginCaptures:
           1:
             name: keyword.other
           2:
             name: keyword.fun
           3:
-            name: variable.parameter
+            name: keyword.other
           4:
+            name: variable.parameter
+          5:
             name: support.type.receiver
         end: (\w+)\s*\(
         endCaptures:

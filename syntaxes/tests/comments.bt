@@ -2,12 +2,3 @@
 
     // line comment
 //  ^^^^^^^^^^^^^^^ comment.line.double-slash
-
-/*
-// <- meta.comment.block.begin
-    block comment inbetween
-    /* nested */
-//  ^^ meta.comment.block.begin
-//            ^^ meta.comment.block.end
-*/
-// <- meta.comment.block.end

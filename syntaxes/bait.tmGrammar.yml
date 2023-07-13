@@ -27,21 +27,9 @@ repository:
       - include: '#strings'
 
   comments:
-    patterns:
-      - name: comment.line.double-slash
-        begin: //
-        end: $
-      - name: comment.block
-        begin: /\*
-        beginCaptures:
-          0:
-            name: meta.comment.block.begin
-        end: \*/
-        endCaptures:
-          0:
-            name: meta.comment.block.end
-        patterns:
-          - include: "#comments"
+    name: comment.line.double-slash
+    begin: //
+    end: $
 
   functions:
     patterns:

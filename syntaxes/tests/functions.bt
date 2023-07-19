@@ -8,6 +8,10 @@ fun spam_eggs() {
 //  ^^^^^^^^ entity.name.function
 }
 
+fun gen[T, U](a T, b U) T {}
+//  ^^^ entity.name.function
+//     ^^^^^^ meta.generics.definition
+
 fun (f Foo) method() {}
 //   ^ variable.parameter
 //   ^ - entity.name.function

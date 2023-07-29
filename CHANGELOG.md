@@ -3,11 +3,14 @@
 _upcoming_
 
 **Additions and Changes**
+- Highlight `void` and `interface`
+- Support highlighting mutable method receivers
 - Add tokenization for attributes
 - Switch License from MIT to MPL-2.0
 
 **Fixes**
 - Do not highlight `'\${}'` as string interpolation
+- Remove multiline comments highlighting as they are not implemented in Bait
 
 
 ## 0.3.0

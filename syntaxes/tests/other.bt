@@ -48,3 +48,6 @@ fun myfun() {
     return
 //  ^^^^^^ keyword.control
 }
+
+interface #JS.Any {}
+// <--------- keyword.other

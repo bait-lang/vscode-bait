@@ -63,7 +63,7 @@ repository:
       - name: keyword.fun
         match: \bfun\b
       - name: keyword.other
-        match: \b(as|assert|const|enum|global|import|mut|package|pub|struct|type|typeof)\b
+        match: \b(as|assert|const|enum|global|import|interface|mut|package|pub|struct|type|typeof)\b
       - name: keyword.control
         match: \b(and|break|continue|else|for|if|in|is|match|not|or|return)\b
       - name: constant.language

@@ -1,9 +1,10 @@
 # Changelog
 ## 0.4.0
-_upcoming_
+_07 September 2023_
 
 **Additions and Changes**
 - Highlight `void` and `interface`
+- Highlight generic function declarations
 - Support highlighting mutable method receivers
 - Add tokenization for attributes
 - Switch License from MIT to MPL-2.0

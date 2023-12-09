@@ -1,6 +1,5 @@
-# This file is part of vscode-bait.
-# Copyright (c) 2022-present Lukas Neubert.
-# This Source Code Form is subject to the terms of the Mozilla Public License 2.0.
+# SPDX-FileCopyrightText: 2022-present Lukas Neubert <lukas.neubert@proton.me>
+# SPDX-License-Identifier: MPL-2.0
 
 scopeName: source.bait
 fileTypes: [.bt]

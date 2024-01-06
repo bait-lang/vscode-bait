@@ -9,8 +9,8 @@ devDependencies:
     specifier: ^0.8.0
     version: 0.8.0
   '@vscode/vsce':
-    specifier: ~2.19.0
-    version: 2.19.0
+    specifier: ~2.22.0
+    version: 2.22.0
   vscode-tmgrammar-test:
     specifier: ~0.1.1
     version: 0.1.2
@@ -26,8 +26,8 @@ packages:
       js-yaml: 4.1.0
     dev: true
 
-  /@vscode/vsce@2.19.0:
-    resolution: {integrity: sha512-dAlILxC5ggOutcvJY24jxz913wimGiUrHaPkk16Gm9/PGFbz1YezWtrXsTKUtJws4fIlpX2UIlVlVESWq8lkfQ==}
+  /@vscode/vsce@2.22.0:
+    resolution: {integrity: sha512-8df4uJiM3C6GZ2Sx/KilSKVxsetrTBBIUb3c0W4B1EWHcddioVs5mkyDKtMNP0khP/xBILVSzlXxhV+nm2rC9A==}
     engines: {node: '>= 14'}
     hasBin: true
     dependencies:
@@ -44,7 +44,7 @@ packages:
       minimatch: 3.1.2
       parse-semver: 1.1.1
       read: 1.0.7
-      semver: 5.7.2
+      semver: 7.5.4
       tmp: 0.2.1
       typed-rest-client: 1.8.11
       url-join: 4.0.1
@@ -689,7 +689,6 @@ packages:
     dependencies:
       lru-cache: 6.0.0
     dev: true
-    optional: true
 
   /set-function-length@1.1.1:
     resolution: {integrity: sha512-VoaqjbBJKiWtg4yRcKBQ7g7wnGnLV3M8oLvVWwOk2PdYY6PEFegR1vezXR0tw6fZGF9csVakIRjrJiy2veSBFQ==}

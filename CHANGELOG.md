@@ -1,4 +1,11 @@
 # Changelog
+## 0.5.0
+_unreleased_
+
+**Engineering**
+- Switch from `npm` to `pnpm`
+
+
 ## 0.4.0
 _07 September 2023_
 

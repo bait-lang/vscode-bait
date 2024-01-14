@@ -6,9 +6,9 @@
 	"license": "MPL-2.0",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/tiabeast/vscode-bait"
+		"url": "https://github.com/bait-lang/vscode-bait"
 	},
-	"publisher": "tiabeast",
+	"publisher": "bait-lang",
 	"engines": {
 		"node": "16 || >=18",
 		"vscode": "^1.74.0",

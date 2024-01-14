@@ -1,8 +1,9 @@
 # Changelog
 ## 0.5.0
-_unreleased_
+_2024-01-14_
 
 **Engineering**
+- Move to `bait-lang` organization
 - Switch from `npm` to `pnpm`
 
 
@@ -22,7 +23,7 @@ _07 September 2023_
 
 
 ## 0.3.0
-_28 April 2023_
+_28 April 2023_vba
 
 **Changes**
 - Highlight `global`, `is`, `map`, `pub` and `typeof` keywords

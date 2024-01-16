@@ -1,18 +1,24 @@
-# Bait language support for VS Code
+<img align="left" width=110 src="images/bait-logo.png">
+
+# Bait Language Support for VS Code
 [![CI][ci-badge]][ci-status]
 [![Marketplace Installs][badge-installs-market]][vs-marketplace]
 [![Open VSX Installs][badge-installs-vsx]][open-vsx]
+---
 
 Provides rich language support for the [Bait Programming Language][bait-repo].
+
 
 ## Installation
 Launch the command palette (<kbd>Ctrl</kbd>+<kbd>P</kbd>) and run `ext install bait-lang.vscode-bait`.
 
-The extension is also available on Open VSX: https://open-vsx.org/extension/bait-lang/vscode-bait
+The extension is also available on [Open VSX][open-vsx].
+
 
 ## License
 This repository is licensed under the Mozilla Public License (`MPL-2.0`).
 See [LICENSE.txt](./LICENSE.txt) for details.
+
 
 <!-- links -->
 [ci-badge]: https://github.com/bait-lang/vscode-bait/actions/workflows/ci.yml/badge.svg

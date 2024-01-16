@@ -8,6 +8,8 @@
 !out/*.js
 !out/*.json
 
+!images/bait-logo.png
+
 !README.md
 !LICENSE.txt
 !CHANGELOG.md

@@ -1,9 +1,9 @@
 {
 	"name": "vscode-bait",
 	"displayName": "bait",
-	"description": "Provides rich language support for the Bait Programming Language.",
+	"description": "Rich language support for the Bait Programming Language.",
 	"icon": "images/bait-logo.png",
-	"version": "0.6.0",
+	"version": "0.6.1-dev",
 	"license": "MPL-2.0",
 	"repository": {
 		"type": "git",
@@ -11,12 +11,16 @@
 	},
 	"publisher": "bait-lang",
 	"engines": {
-		"node": "16 || >=18",
-		"vscode": "^1.74.0",
-		"pnpm": ">=8"
+		"node": ">=18",
+		"vscode": "^1.82.0"
 	},
+	"packageManager": "pnpm@9.12.2+sha512.22721b3a11f81661ae1ec68ce1a7b879425a1ca5b991c975b074ac220b187ce56c708fe5db69f4c962c989452eee76c82877f4ee80f474cebd61ee13461b6228",
 	"categories": [
-		"Programming Languages"
+		"Programming Languages",
+		"Language Packs"
+	],
+	"keywords": [
+		"Bait"
 	],
 	"activationEvents": [],
 	"main": "./out/extension.js",
@@ -48,7 +52,7 @@
 	},
 	"devDependencies": {
 		"@serkonda7/yaml2json": "^0.9.0",
-		"@vscode/vsce": "~2.22.0",
-		"vscode-tmgrammar-test": "~0.1.1"
+		"@vscode/vsce": "~3.2.1",
+		"vscode-tmgrammar-test": "~0.1.3"
 	}
 }

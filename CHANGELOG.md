@@ -1,4 +1,8 @@
 # Changelog
+## 0.6.1 - 2024-10-27
+- Fix highlighting of compile time if/else
+
+
 ## 0.6.0
 _2024-01-16_
 

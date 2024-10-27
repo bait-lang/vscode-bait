@@ -65,6 +65,8 @@ repository:
         match: \b(as|assert|const|enum|global|import|interface|mut|package|pub|struct|type|typeof)\b
       - name: keyword.control
         match: \b(and|break|continue|else|for|if|in|is|match|not|or|return)\b
+      - name: keyword.control.comptime
+        match: \$(else|if)\b
       - name: constant.language
         match: \b(false|true)\b
 

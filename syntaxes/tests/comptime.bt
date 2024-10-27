@@ -1,0 +1,10 @@
+// SYNTAX TEST "source.bait" "keyword.control.comptime"
+
+$if LINUX {
+// <-- keyword.control.comptime
+} $else $if WINDOWS {
+//^^^^^ keyword.control.comptime
+//      ^^^ keyword.control.comptime
+} $else {
+//^^^^^ keyword.control.comptime
+}

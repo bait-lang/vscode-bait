@@ -16,8 +16,7 @@ The extension is also available on [Open VSX][open-vsx].
 
 
 ## License
-This repository is licensed under the Mozilla Public License (`MPL-2.0`).
-See [LICENSE.txt](./LICENSE.txt) for details.
+This repository is provided under the [MIT License](./LICENSE.txt).
 
 
 <!-- links -->

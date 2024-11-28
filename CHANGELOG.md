@@ -1,4 +1,9 @@
 # Changelog
+## 0.7.0 - 2024-11-28
+- Highlight `static`
+-
+
+
 ## 0.6.1 - 2024-10-27
 - Fix highlighting of compile time if/else
 

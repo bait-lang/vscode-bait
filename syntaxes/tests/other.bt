@@ -1,6 +1,6 @@
 // SYNTAX TEST "source.bait" "main syntax test"
 
-global my_global_var := 'val'
+static my_static_var := 'val'
 // <------ keyword.other
 
 type CustomFunType = fun() string
@@ -11,6 +11,11 @@ enum Color {
     red
     green
     blue
+}
+
+struct Foo {
+    global g_field i32
+//  ^^^^^^ keyword.other
 }
 
 fun myfun() {

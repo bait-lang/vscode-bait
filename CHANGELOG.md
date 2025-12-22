@@ -1,4 +1,9 @@
 # Changelog
+## 0.7.1 - unreleased
+- build: Switch from pnpm to bun
+- build: replace vscode-tmlanguage-test with textmate-grammar-test
+
+
 ## 0.7.0 - 2024-11-28
 - Highlight `static`
 - Switch license back to MIT

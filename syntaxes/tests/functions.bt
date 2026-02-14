@@ -14,7 +14,7 @@ fun gen[T, U](a T, b U) T {}
 
 fun (f Foo) method() {}
 //   ^ variable.parameter
-//   ^ - entity.name.function
+//   ^ ! entity.name.function
 //     ^^^ support.type.receiver
 //          ^^^^^^ entity.name.function
 
@@ -45,9 +45,9 @@ fun (mutf Foo) foo() {}
 
 // INVALID CODE
 function bad() {
-// <-- - keyword.fun
+// <-- ! keyword.fun
 
     funvar := 1
 //  ^^^^^^ variable.other
-//  ^^^ - keyword.fun
+//  ^^^ ! keyword.fun
 }

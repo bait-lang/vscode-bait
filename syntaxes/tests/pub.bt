@@ -5,5 +5,5 @@ pub type SumType = Foo | Bar
 
 pub fun foo() {}
 // <-- keyword.other
-// ^ - keyword.other
+// ^ ! keyword.other
 //  ^^^ keyword.fun

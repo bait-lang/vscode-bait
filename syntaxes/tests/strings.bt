@@ -28,4 +28,4 @@ mut i := 'a ${v1} b ${v2} c'
 
 i = '\${}'
 //   ^^ constant.character.escape.bait
-//    ^^^ - meta.string.interpolated
+//    ^^^ ! meta.string.interpolated

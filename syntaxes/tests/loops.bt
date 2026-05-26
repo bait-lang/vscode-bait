@@ -1,4 +1,4 @@
-// SYNTAX TEST "source.bait" "loops"
+// SYNTAX TEST v1 "source.bait" "loops"
 
 fun main() {
     for i := 0; i <= 123; i += 1 {

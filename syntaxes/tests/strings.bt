@@ -1,4 +1,4 @@
-// SYNTAX TEST "source.bait" "string highlight test"
+// SYNTAX TEST v1 "source.bait" "string highlight test"
 
 s := 'my string'
 //   ^^^^^^^^^^^ string.quoted.single
